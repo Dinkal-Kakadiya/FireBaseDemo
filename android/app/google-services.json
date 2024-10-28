@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "608272447179",
+    "project_id": "fir-demo-458ab",
+    "storage_bucket": "fir-demo-458ab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:608272447179:android:f2a9b4f630c5234163cd4e",
+        "android_client_info": {
+          "package_name": "com.firebasedemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "608272447179-i2h49doh36jjr6b37sm8sp9a7jdbhhvg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpdkQHaeCb5XArPW2wIdxQR_WZqrvX31E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "608272447179-i2h49doh36jjr6b37sm8sp9a7jdbhhvg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "608272447179-7b4fhdc31kgpe4nhpo6nissl6pmd4ise.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.FireBaseDemo"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
