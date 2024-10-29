@@ -10,6 +10,7 @@ import PhoneAuth from '../screens/authentication/PhoneAuth';
 import LogOutScreen from '../screens/LogOutScreen';
 import GoogleAuth from '../screens/authentication/GoogleAuth';
 import PhoneAuthTwo from '../screens/authentication/PhoneAuthTwo';
+import CloudStorage from '../screens/CloudStorage';
 
 const RootNavigation = () => {
   const Stack = createNativeStackNavigator();
@@ -23,6 +24,7 @@ const RootNavigation = () => {
         <Stack.Screen name="LogOutScreen" component={LogOutScreen} />
         <Stack.Screen name="GoogleAuth" component={GoogleAuth} />
         <Stack.Screen name="PhoneAuthTwo" component={PhoneAuthTwo} />
+        <Stack.Screen name="CloudStorage" component={CloudStorage} />
         {/* <Stack.Screen name="Authentication" component={Authentication} /> */}
       </Stack.Navigator>
     </NavigationContainer>

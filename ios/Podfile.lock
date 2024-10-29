@@ -1168,6 +1168,9 @@ PODS:
   - Firebase/Firestore (11.4.0):
     - Firebase/CoreOnly
     - FirebaseFirestore (~> 11.4.0)
+  - Firebase/Storage (11.4.0):
+    - Firebase/CoreOnly
+    - FirebaseStorage (~> 11.4.0)
   - FirebaseAppCheckInterop (11.4.0)
   - FirebaseAuth (11.4.0):
     - FirebaseAppCheckInterop (~> 11.0)
@@ -1208,6 +1211,13 @@ PODS:
     - leveldb-library (~> 1.22)
     - nanopb (~> 3.30910.0)
   - FirebaseSharedSwift (11.4.0)
+  - FirebaseStorage (11.4.0):
+    - FirebaseAppCheckInterop (~> 11.0)
+    - FirebaseAuthInterop (~> 11.0)
+    - FirebaseCore (~> 11.4)
+    - FirebaseCoreExtension (~> 11.4)
+    - GoogleUtilities/Environment (~> 8.0)
+    - GTMSessionFetcher/Core (< 5.0, >= 3.4)
   - fmt (9.1.0)
   - glog (0.3.5)
   - GoogleSignIn (7.1.0):
@@ -2842,9 +2852,22 @@ PODS:
     - Firebase/Firestore (<= 11.4.0)
     - React-Core
     - RNFBApp
+  - RNFBStorage (21.2.0):
+    - Firebase/Storage (<= 11.4.0)
+    - React-Core
+    - RNFBApp
   - RNGoogleSignin (13.1.0):
     - GoogleSignIn (~> 7.1)
     - React-Core
+  - RNImageCropPicker (0.41.4):
+    - React-Core
+    - React-RCTImage
+    - RNImageCropPicker/QBImagePickerController (= 0.41.4)
+    - TOCropViewController (~> 2.7.4)
+  - RNImageCropPicker/QBImagePickerController (0.41.4):
+    - React-Core
+    - React-RCTImage
+    - TOCropViewController (~> 2.7.4)
   - RNScreens (3.35.0):
     - DoubleConversion
     - glog
@@ -2868,6 +2891,7 @@ PODS:
     - ReactCommon/turbomodule/core
     - Yoga
   - SocketRocket (0.7.0)
+  - TOCropViewController (2.7.4)
   - Yoga (0.0.0)
 
 DEPENDENCIES:
@@ -2938,7 +2962,9 @@ DEPENDENCIES:
   - "RNFBApp (from `../node_modules/@react-native-firebase/app`)"
   - "RNFBAuth (from `../node_modules/@react-native-firebase/auth`)"
   - "RNFBFirestore (from `../node_modules/@react-native-firebase/firestore`)"
+  - "RNFBStorage (from `../node_modules/@react-native-firebase/storage`)"
   - "RNGoogleSignin (from `../node_modules/@react-native-google-signin/google-signin`)"
+  - RNImageCropPicker (from `../node_modules/react-native-image-crop-picker`)
   - RNScreens (from `../node_modules/react-native-screens`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
@@ -2957,6 +2983,7 @@ SPEC REPOS:
     - FirebaseFirestore
     - FirebaseFirestoreInternal
     - FirebaseSharedSwift
+    - FirebaseStorage
     - GoogleSignIn
     - GoogleUtilities
     - "gRPC-C++"
@@ -2967,6 +2994,7 @@ SPEC REPOS:
     - nanopb
     - RecaptchaInterop
     - SocketRocket
+    - TOCropViewController
 
 EXTERNAL SOURCES:
   boost:
@@ -3100,8 +3128,12 @@ EXTERNAL SOURCES:
     :path: "../node_modules/@react-native-firebase/auth"
   RNFBFirestore:
     :path: "../node_modules/@react-native-firebase/firestore"
+  RNFBStorage:
+    :path: "../node_modules/@react-native-firebase/storage"
   RNGoogleSignin:
     :path: "../node_modules/@react-native-google-signin/google-signin"
+  RNImageCropPicker:
+    :path: "../node_modules/react-native-image-crop-picker"
   RNScreens:
     :path: "../node_modules/react-native-screens"
   Yoga:
@@ -3124,6 +3156,7 @@ SPEC CHECKSUMS:
   FirebaseFirestore: 2ccdf893fd7e175aa8ec58faa06338b346d27db8
   FirebaseFirestoreInternal: 004452c4669d5df8869c9f8f7a24ee0009852d5b
   FirebaseSharedSwift: 505dae2d05969dbf6d43749a642bb1bf230f0252
+  FirebaseStorage: 1bf8f80ac3bb02c72844b7350e95e10be7113ef0
   fmt: 4c2741a687cc09f0634a2e2c72a838b99f1ff120
   glog: 69ef571f3de08433d766d614c73a9838a06bf7eb
   GoogleSignIn: d4281ab6cf21542b1cfaff85c191f230b399d2db
@@ -3195,9 +3228,12 @@ SPEC CHECKSUMS:
   RNFBApp: 91c5eba32f43787a66f4c00cf7625f472cd3e0fb
   RNFBAuth: aff0f1b7122e2b1efd0d89c619f61af305aa5a87
   RNFBFirestore: 3a9b42925dbd3d3ea017076247957c5f4be990ef
+  RNFBStorage: d0cdf89c41172bbc96d1dd58f75ece485c8cb8dc
   RNGoogleSignin: 9e68b9bcc3888219357924e32ee563624745647d
+  RNImageCropPicker: 3d888d481c65776063556b72c19893a8b8344b1b
   RNScreens: 16b782596e80e475b7f3ec769c9a97d789d9b0ed
   SocketRocket: abac6f5de4d4d62d24e11868d7a2f427e0ef940d
+  TOCropViewController: 80b8985ad794298fb69d3341de183f33d1853654
   Yoga: b05994d1933f507b0a28ceaa4fdb968dc18da178
 
 PODFILE CHECKSUM: 4557965b01cbfb98eb0d294af29d20527e9f86f7

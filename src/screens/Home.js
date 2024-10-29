@@ -50,6 +50,13 @@ const Home = () => {
         style={styles.btns}>
         <Text>Phone Authentication 2 </Text>
       </TouchableOpacity>
+      <TouchableOpacity
+        onPress={() => {
+          navigation.navigate('CloudStorage');
+        }}
+        style={styles.btns}>
+        <Text>Cloud Storage </Text>
+      </TouchableOpacity>
     </SafeAreaView>
   );
 };

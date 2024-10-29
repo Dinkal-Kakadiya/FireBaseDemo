@@ -2859,6 +2859,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@react-native-firebase/storage@npm:^21.2.0":
+  version: 21.2.0
+  resolution: "@react-native-firebase/storage@npm:21.2.0"
+  peerDependencies:
+    "@react-native-firebase/app": 21.2.0
+  checksum: afd1d228d557c610bbfe73aa3c25318007f2def6f3400fd3ba21bc6a182a15bf7fa08b8f943eb7a143059e2d3385c531ed5fbdb9831f155fdb3f75e9c709f76f
+  languageName: node
+  linkType: hard
+
 "@react-native-google-signin/google-signin@npm:^13.1.0":
   version: 13.1.0
   resolution: "@react-native-google-signin/google-signin@npm:13.1.0"
@@ -3320,11 +3329,11 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:*, @types/node@npm:>=12.12.47, @types/node@npm:>=13.7.0":
-  version: 22.8.1
-  resolution: "@types/node@npm:22.8.1"
+  version: 22.8.2
+  resolution: "@types/node@npm:22.8.2"
   dependencies:
     undici-types: ~6.19.8
-  checksum: 2fc10ff364690f7962659d163cf9a9b71d46a2414f15ceeb5ea9fb6a1e81d2b04f550d0dfd9156576b192d76e886b24d13932d8eb5447075d455481c70fd2ad1
+  checksum: 8d57352fe563e8de78311c2f799e8c3805cbec3840dfa54d5168588c30112d1e87a7940ebdbdcebb1f0094e26b7e626dfadd9683f5c60d8a76e9082051fea14a
   languageName: node
   linkType: hard
 
@@ -3598,6 +3607,7 @@ __metadata:
     "@react-native-firebase/app": ^21.2.0
     "@react-native-firebase/auth": ^21.2.0
     "@react-native-firebase/firestore": ^21.2.0
+    "@react-native-firebase/storage": ^21.2.0
     "@react-native-google-signin/google-signin": ^13.1.0
     "@react-native/babel-preset": 0.75.4
     "@react-native/eslint-config": 0.75.4
@@ -3613,6 +3623,7 @@ __metadata:
     prettier: 2.8.8
     react: 18.3.1
     react-native: 0.75.4
+    react-native-image-crop-picker: ^0.41.4
     react-native-safe-area-context: ^4.11.1
     react-native-screens: ^3.34.0
     react-test-renderer: 18.3.1
@@ -4832,9 +4843,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.5.41":
-  version: 1.5.47
-  resolution: "electron-to-chromium@npm:1.5.47"
-  checksum: a6f31fdc79d1845365a54dfeaa5684cec6961c8bdeb3c406b520a0bb5987a0eaf28e24a75086ff1093fb629ca1bcfbfbd24d04d0ef69c37d85fedd6c621fef76
+  version: 1.5.49
+  resolution: "electron-to-chromium@npm:1.5.49"
+  checksum: 84d4fde02a6de9464f8de2933e2172253098bf219a368cfd0e1ec71b73f9c0800a9ddf7bfdf57408e5fedef858561eaaf4e30ebbf20d94244a6001d570ce07a9
   languageName: node
   linkType: hard
 
@@ -8715,6 +8726,15 @@ __metadata:
   version: 17.0.2
   resolution: "react-is@npm:17.0.2"
   checksum: 9d6d111d8990dc98bc5402c1266a808b0459b5d54830bbea24c12d908b536df7883f268a7868cfaedde3dd9d4e0d574db456f84d2e6df9c4526f99bb4b5344d8
+  languageName: node
+  linkType: hard
+
+"react-native-image-crop-picker@npm:^0.41.4":
+  version: 0.41.4
+  resolution: "react-native-image-crop-picker@npm:0.41.4"
+  peerDependencies:
+    react-native: ">=0.40.0"
+  checksum: 56a84330b4c9d9fd8cadd3519a178a610298be3851b6f516b2003c6951934ab23eb8989b36776447a643495c1ee8d712d203169cc50e7296763479e961534c21
   languageName: node
   linkType: hard
 
