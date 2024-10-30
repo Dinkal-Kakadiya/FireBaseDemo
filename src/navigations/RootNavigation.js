@@ -11,12 +11,24 @@ import LogOutScreen from '../screens/LogOutScreen';
 import GoogleAuth from '../screens/authentication/GoogleAuth';
 import PhoneAuthTwo from '../screens/authentication/PhoneAuthTwo';
 import CloudStorage from '../screens/CloudStorage';
+import ProfileScreen from '../screens/ProfileScreen';
+import Login from '../screens/ChatDemo/Login';
+import Register from '../screens/ChatDemo/Register';
+import Users from '../screens/ChatDemo/Users';
+import Profile from '../screens/ChatDemo/Profile';
 
 const RootNavigation = () => {
   const Stack = createNativeStackNavigator();
   return (
     <NavigationContainer>
-      <Stack.Navigator screenOptions={{headerShown: false}}>
+      <Stack.Navigator
+        screenOptions={{headerShown: false}}
+        initialRouteName="Login">
+        <Stack.Screen name="Login" component={Login} />
+        <Stack.Screen name="Register" component={Register} />
+        <Stack.Screen name="Users" component={Users} />
+        <Stack.Screen name="Profile" component={Profile} />
+
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="GetData" component={GetData} />
         <Stack.Screen name="SignUp" component={SignUp} />
@@ -25,6 +37,8 @@ const RootNavigation = () => {
         <Stack.Screen name="GoogleAuth" component={GoogleAuth} />
         <Stack.Screen name="PhoneAuthTwo" component={PhoneAuthTwo} />
         <Stack.Screen name="CloudStorage" component={CloudStorage} />
+        <Stack.Screen name="ProfileScreen" component={ProfileScreen} />
+
         {/* <Stack.Screen name="Authentication" component={Authentication} /> */}
       </Stack.Navigator>
     </NavigationContainer>

@@ -17,6 +17,13 @@ const Home = () => {
     <SafeAreaView>
       <TouchableOpacity
         onPress={() => {
+          navigation.navigate('Login');
+        }}
+        style={styles.btns}>
+        <Text>Login</Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={() => {
           navigation.navigate('GetData');
         }}
         style={styles.btns}>
@@ -56,6 +63,13 @@ const Home = () => {
         }}
         style={styles.btns}>
         <Text>Cloud Storage </Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={() => {
+          navigation.navigate('ProfileScreen');
+        }}
+        style={styles.btns}>
+        <Text>Profile Screen</Text>
       </TouchableOpacity>
     </SafeAreaView>
   );

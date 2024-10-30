@@ -3329,11 +3329,11 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:*, @types/node@npm:>=12.12.47, @types/node@npm:>=13.7.0":
-  version: 22.8.2
-  resolution: "@types/node@npm:22.8.2"
+  version: 22.8.4
+  resolution: "@types/node@npm:22.8.4"
   dependencies:
     undici-types: ~6.19.8
-  checksum: 8d57352fe563e8de78311c2f799e8c3805cbec3840dfa54d5168588c30112d1e87a7940ebdbdcebb1f0094e26b7e626dfadd9683f5c60d8a76e9082051fea14a
+  checksum: 1e55594ce7942e259919283e6bb9ee814f184afcd545956d95163dd3b1d4b1923dba97e0c258c5a9dd2c96b2e754fa9ae42994437a564255c8907ae7cdc25b4b
   languageName: node
   linkType: hard
 
@@ -4269,9 +4269,9 @@ __metadata:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.30001669":
-  version: 1.0.30001673
-  resolution: "caniuse-lite@npm:1.0.30001673"
-  checksum: c4e1dce7375d228fa896bb8d94921b817ef0a09df562e78609830216d5f254f247e8ca0f5f42c4078f360f4f5bd4c48d6303e2d5bb7f74561ba30bc14d08fe0a
+  version: 1.0.30001674
+  resolution: "caniuse-lite@npm:1.0.30001674"
+  checksum: 05bbb4f9823b38ac157678be69c4ec4aa39fbbf6af3ffaffe89c8f5b118a1883d2e7c0065e9a71149061ab653bf332f2fa6256c195b16db85e49651b52f109df
   languageName: node
   linkType: hard
 
@@ -5633,9 +5633,9 @@ __metadata:
   linkType: hard
 
 "flow-parser@npm:0.*":
-  version: 0.250.0
-  resolution: "flow-parser@npm:0.250.0"
-  checksum: db4b5a6056e9853d83e2743621fa32311aa6af9633ac4eb083a51bcf4bc62dbac7df29dd9514006b4137c0a339d572d17ec6feeaa443782ed40aee17f8124d4a
+  version: 0.251.0
+  resolution: "flow-parser@npm:0.251.0"
+  checksum: d97e70498a69cd7612519f7ac66c30dbd9ae1540a3242e4b5491a2079e8a59b46d3bcf6bfaa53adf7fbbbc3f4f6135e2cf4088ddf0ff7b7acf3fb5ee3f0286d4
   languageName: node
   linkType: hard
 

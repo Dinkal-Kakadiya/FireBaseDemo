@@ -25,7 +25,7 @@ const CloudStorage = () => {
       cropping: true,
     })
       .then(res => {
-        console.log('---------->>>>>>>>>>', res?.path);
+        console.log('---------->>>>>>>>>>&&&&&&&&&', res?.path);
         setImage(res?.path);
       })
       .catch(e => {
