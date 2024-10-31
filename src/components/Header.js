@@ -1,10 +1,12 @@
-import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import {Image, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import React, {useEffect, useState} from 'react';
 import {useNavigation} from '@react-navigation/native';
-
 import auth from '@react-native-firebase/auth';
+import ConstImage from '../assets';
 
-const Header = () => {
+const Header = props => {
+  const {image} = props;
+
   const navigation = useNavigation();
 
   return (
@@ -13,7 +15,11 @@ const Header = () => {
         onPress={() => {
           navigation.goBack();
         }}>
-        <Text style={styles.backText}>Back</Text>
+        {image ? (
+          <Image source={ConstImage.backArrow} style={styles.backArrowImg} />
+        ) : (
+          <Text style={styles.backText}>Back</Text>
+        )}
       </TouchableOpacity>
     </View>
   );
@@ -23,7 +29,13 @@ export default Header;
 
 const styles = StyleSheet.create({
   conatainer: {
-    backgroundColor: 'yellow',
+    paddingTop: 10,
+  },
+  backArrowImg: {
+    resizeMode: 'contain',
+    height: 35,
+    width: 35,
+    marginHorizontal: 15,
   },
   backText: {
     fontSize: 20,

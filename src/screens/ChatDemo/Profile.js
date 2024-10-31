@@ -9,6 +9,8 @@ import {
 import React from 'react';
 import auth from '@react-native-firebase/auth';
 import {useNavigation} from '@react-navigation/native';
+import ConstImage from '../../assets';
+import Header from '../../components/Header';
 
 const Profile = props => {
   const navigation = useNavigation();
@@ -16,6 +18,10 @@ const Profile = props => {
   console.log(userDetails, '-=-=-=-=-=-=-=-=-=-=-');
   return (
     <SafeAreaView style={styles.container}>
+      {/* <TouchableOpacity style={styles.backBtnContainer}>
+        <Image source={ConstImage.backArrow}  style={styles.backBtnImage} />
+      </TouchableOpacity> */}
+      <Header image={true} />
       <Image
         source={{uri: userDetails.profileImage}}
         style={styles.profileImage}
@@ -46,7 +52,7 @@ const Profile = props => {
             });
         }}
         style={styles.logoutBtn}>
-        <Text>LogOut</Text>
+        <Text style={styles.logoutTxt}>LogOut</Text>
       </TouchableOpacity>
     </SafeAreaView>
   );
@@ -58,6 +64,10 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: 'white',
+  },
+  backBtnImage: {
+    backgroundColor: 'red',
+    height: 25,
   },
   profileImage: {
     height: 150,
@@ -99,5 +109,10 @@ const styles = StyleSheet.create({
     marginHorizontal: 120,
     marginVertical: 30,
     paddingVertical: 15,
+  },
+  logoutTxt: {
+    color: 'red',
+    fontSize: 18,
+    fontWeight: '500',
   },
 });

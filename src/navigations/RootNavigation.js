@@ -16,6 +16,7 @@ import Login from '../screens/ChatDemo/Login';
 import Register from '../screens/ChatDemo/Register';
 import Users from '../screens/ChatDemo/Users';
 import Profile from '../screens/ChatDemo/Profile';
+import ChatScreen from '../screens/ChatDemo/ChatScreen';
 
 const RootNavigation = () => {
   const Stack = createNativeStackNavigator();
@@ -28,6 +29,7 @@ const RootNavigation = () => {
         <Stack.Screen name="Register" component={Register} />
         <Stack.Screen name="Users" component={Users} />
         <Stack.Screen name="Profile" component={Profile} />
+        <Stack.Screen name="ChatScreen" component={ChatScreen} />
 
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="GetData" component={GetData} />

@@ -22,7 +22,7 @@ const Login = () => {
   const passwordRegex =
     /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
 
-  console.log(auth()?.currentUser?.uid, '[-][-]-[]-[]-[]-[]-[]-[]');
+  // console.log(auth()?.currentUser?.uid, '[-][-]-[]-[]-[]-[]-[]-[]');
   const validation = () => {
     if (email && password) {
       if (emailRegex.test(email) === true) {
